@@ -1,0 +1,22 @@
+#root {
+    margin: 3rem 5rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1{
+    @apply
+    text-5xl font-bold leading-normal text-black
+}
+
+p{
+    @apply
+    font-normal text-xl opacity-70 mt-8
+}
+
+.btn{
+    @apply
+    py-5 px-10  font-semibold text-lg rounded-full
+}
