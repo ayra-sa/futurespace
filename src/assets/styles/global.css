@@ -24,6 +24,12 @@
   } */
 }
 
+@layer components {
+  .slick-slide {
+    @apply mr-10
+  }
+}
+
 /* .btn{
     @apply
     py-5 px-10  font-semibold text-lg rounded-full
