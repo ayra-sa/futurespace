@@ -9,8 +9,10 @@ export default {
       colors: {
         // 'primary': '#0192FE'
         primary: '#0192FE',
-        label: '#0292FF'
-      }
+        label: '#0292FF',
+        primaryText: '#000',
+        secondaryText: '#2E3135'
+      },
     },
   },
   plugins: [],
