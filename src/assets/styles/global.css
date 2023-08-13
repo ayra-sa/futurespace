@@ -5,3 +5,55 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.btn {
+    @apply py-2 px-6 font-semibold text-lg rounded-full
+}
+
+section {
+    @apply mt-40
+}
+
+.card{
+    @apply mt-12 flex gap-12
+}
+
+.card-services > div{
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    #root {
+        margin: 3rem;
+    }
+
+    .box {
+        flex-direction: column !important;
+    }
+
+    .box img {
+        @apply mt-7
+    }
+
+    .btn{
+        @apply text-sm
+    }
+
+    .mt-16{
+        margin-top: 2rem !important;
+    }
+
+    section{
+        margin-top: 6rem !important;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+    .card-services > div{
+        width: 100%;
+    }
+}

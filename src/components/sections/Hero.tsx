@@ -5,7 +5,7 @@ import Illus from "../../assets/images/hero.svg";
 
 const Hero = () => {
   return (
-    <section className="flex justify-between items-center gap-x-8">
+    <section className="flex justify-between items-center gap-x-8 box">
       <div className="text-left text-black max-w-[420px]">
         <h1>The workspace that works for you & your team</h1>
         <p>A safe, comfortable, and hassle-free Coworking workspace increases

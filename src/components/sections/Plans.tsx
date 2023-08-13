@@ -19,10 +19,10 @@ const Plans = () => {
           everything you need to be included in one price.
         </p>
       </div>
-      <div className="mt-12 flex gap-x-12">
-        <CardService icon={icon} title="Office Space" />
-        <CardService icon={icon2} title="Coworking Space" />
-        <CardService icon={icon3} title="Meeting Space" />
+      <div className="card box">
+        <CardService icon={icon} title="Office Space" desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."/>
+        <CardService icon={icon2} title="Coworking Space" desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier." />
+        <CardService icon={icon3} title="Meeting Space" desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier." />
       </div>
     </section>
   );

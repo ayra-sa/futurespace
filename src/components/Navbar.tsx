@@ -1,17 +1,29 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Logo from ".././assets/icons/logo.svg";
 import { Button } from "./Button";
 
+interface LinkItem {
+  name: string;
+  link: string;
+}
+
 const Navbar = () => {
-  const Links = [
-    { name: "About", link: "/" },
-    { name: "Pricing", link: "/" },
+  const Links: LinkItem[] = [
+    { name: "About", link: "/about" },
+    { name: "Pricing", link: "/pricing" },
     { name: "Offices", link: "/" },
-    { name: "Spaces", link: "/" },
-    { name: "Contact us", link: "/" },
+    { name: "Spaces", link: "/spaces" },
+    { name: "Contact us", link: "/contact" },
   ];
 
   const [open, setOpen] = useState(false);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+
   return (
     <div className="w-full fixed top-0 left-0 z-20">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -33,13 +45,15 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
-                className="text-black text-base hover:text-gray-400 duration-500"
-              >
-                {link.name}
-              </a>
-            </li>
+            <NavLink
+              to={link.link}
+              activeClassName="text-primary"
+              className="text-black text-base hover:text-gray-400 duration-500"
+              onClick={handleToggle}
+            >
+              {link.name}
+            </NavLink>
+          </li>
           ))}
           <Button title="Sign Up"/>
         </ul>

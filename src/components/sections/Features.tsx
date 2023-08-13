@@ -4,10 +4,7 @@ import { CardFeatures } from '../Card';
 
 const Features = () => {
   return (
-    <section className="flex justify-between items-center gap-x-2">
-       <div>
-        <img src={Illus} alt="Illustration Features" />
-      </div>
+    <section className="box flex justify-between items-center gap-x-2 flex-row-reverse">
       <div className="text-left text-black max-w-[600px]">
         <h1>A complete coworking space solution for your business and team</h1>
         <div className='mt-12 gap-y-6 flex flex-col'>
@@ -16,6 +13,10 @@ const Features = () => {
           <CardFeatures title='The most efficient workspace solutions'/>
           <CardFeatures title='Design your productive space'/>
         </div>
+        
+      </div>
+      <div>
+        <img src={Illus} alt="Illustration Features" />
       </div>
     </section>
   )

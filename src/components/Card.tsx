@@ -1,12 +1,10 @@
 import React from "react";
 
-interface Services{
+interface Service{
     title: string,
-    icon: string
-}
-
-interface CardServiceProps extends Services {
-  showBorder?: boolean;
+    icon: string,
+    showBorder?: boolean,
+    desc?: string
 }
 
 interface Features{
@@ -15,15 +13,16 @@ interface Features{
   className?: string
 }
 
-const CardService = (props: CardServiceProps) => {
+const CardService = (props: Service) => {
   const cardClasses = `px-12 py-10 text-left shadow rounded-3xl ${
     props.showBorder ? 'border border-primary' : ''
   }`;
+  const description = props.desc || "Ideal for members who need a productive space to work.";
   return (
     <div className={cardClasses}>
       <img src={props.icon} alt="" />
       <h2>{props.title}</h2>
-      <p className="my-4">Ideal for members who need a <br /> productive space to work.</p>
+      <p className="my-4">{description}</p>
       <div className="flex gap-2 items-center">
         <span className="font-semibold text-primary">Learn More</span>
         <ion-icon name="arrow-forward-circle" color="primary"></ion-icon>
