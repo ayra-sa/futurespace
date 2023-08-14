@@ -8,6 +8,7 @@ export default {
       colors: {
         primary: '#0192FE',
         label: '#0292FF',
+        secondary: '#2E3135'
         // 'primary': '#0192FE',
         // 'secondary': '#2E3135'
       }

@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: FC<ButtonProps> = ({ variant = "primary", children }) => {
   const buttonClass = clsx(
-    "py-5 px-10 rounded-full font-bold",
+    "py-5 px-8 rounded-full font-bold",
     variant === "primary" && "bg-primary text-white",
     variant === "secondary" && "bg-transparent border border-primary text-primary"
   );

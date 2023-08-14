@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from ".././assets/icons/logo.svg";
-import { Button } from "./Button";
+import Button from "./Button";
 
 interface LinkItem {
   name: string;
@@ -28,7 +27,7 @@ const Navbar = () => {
     <div className="w-full fixed top-0 left-0 z-20">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div>
-        <img src={Logo} alt="Logo" className="w-auto" />
+        <img src='icons/logo.svg' alt="Logo" className="w-auto" />
         </div>
 
         <div
@@ -55,7 +54,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           ))}
-          <Button title="Sign Up"/>
+          <Button variant="primary">Sign Up</Button>
         </ul>
       </div>
     </div>

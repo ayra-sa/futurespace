@@ -3,39 +3,48 @@
 @tailwind utilities;
 
 #root {
-  /* margin: 3rem 5rem; */
-  /* text-align: center; */
-  padding: 0;
-  font-family: "Inter", sans-serif;
-  font-family: "Plus Jakarta Sans", sans-serif;
+    /* margin: 3rem 5rem; */
+    /* text-align: center; */
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 @layer base {
     body {
-      @apply text-xl text-black;
+        @apply text-xl text-black;
     }
-  
+
     h1 {
-      @apply text-5xl font-bold leading-normal text-black;
+        @apply text-5xl font-bold leading-normal text-black;
     }
 
     section {
         @apply mt-40
     }
+
+    h2 {
+        @apply font-bold text-secondary text-2xl pt-4
+    }
+
+    p {
+        @apply font-normal text-xl opacity-70 mt-6
+    }
 }
 
-.card{
+.card {
     @apply mt-12 flex gap-12
 }
 
-.card-services > div{
+.card-services>div {
     width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-    body{
+    body {
         overflow-x: hidden;
     }
+
     #root {
         margin: 3rem;
     }
@@ -48,21 +57,23 @@
         @apply mt-7
     }
 
-    .btn{
+    .btn {
         @apply text-sm
     }
 
-    .mt-16{
+    .mt-16 {
         margin-top: 2rem !important;
     }
 
-    section{
+    section {
         margin-top: 6rem !important;
     }
 
-    h1{
+    h1 {
         font-size: 2rem !important;
     }
-    .card-services > div{
+
+    .card-services>div {
         width: 100%;
     }
+}
