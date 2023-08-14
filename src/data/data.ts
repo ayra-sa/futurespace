@@ -11,35 +11,54 @@ export const locationData = {
   ],
 };
 
-export const reviewData = [
-  {
-    label: "reviews",
-    title: "What Our Members Say",
-    reviews: [
-      {
-        photo: "/image",
-        name: "Brittany",
-        work: "Co-Founder & CTO - Payfi",
-        review:
-          "Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.",
-      },
-      {
-        photo: "/image",
-        name: "Randall Robertson",
-        work: "Project lead at Zoole",
-        review:
-          "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
-      },
-      {
-        photo: "/image",
-        name: "Del Gibbs",
-        work: "VP, Globee Softech",
-        review:
-          "Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations",
-      },
-    ],
-  },
-];
+export const reviewData = {
+  label: "reviews",
+  title: "What Our Members Say",
+  reviews: [
+    {
+      photo: "images/brittany.png",
+      name: "Brittany",
+      work: "Co-Founder & CTO - Payfi",
+      review:
+        "Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.",
+    },
+    {
+      photo: "images/randall-robertson.png",
+      name: "Randall Robertson",
+      work: "Project lead at Zoole",
+      review:
+        "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
+    },
+    {
+      photo: "images/del-gibbs.png",
+      name: "Del Gibbs",
+      work: "VP, Globee Softech",
+      review:
+        "Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations",
+    },
+    {
+      photo: "images/brittany.png",
+      name: "Brittany",
+      work: "Co-Founder & CTO - Payfi",
+      review:
+        "Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.",
+    },
+    {
+      photo: "images/randall-robertson.png",
+      name: "Randall Robertson",
+      work: "Project lead at Zoole",
+      review:
+        "Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.",
+    },
+    {
+      photo: "images/del-gibbs.png",
+      name: "Del Gibbs",
+      work: "VP, Globee Softech",
+      review:
+        "Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations",
+    },
+  ],
+};
 
 export const footerData = [
   {

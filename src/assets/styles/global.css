@@ -32,6 +32,18 @@
     }
 }
 
+<<<<<<< HEAD
+@layer components {
+  .slick-slide {
+    @apply mr-10
+  }
+}
+
+/* .btn{
+    @apply
+    py-5 px-10  font-semibold text-lg rounded-full
+} */
+=======
 .card {
     @apply mt-12 flex gap-12
 }
@@ -77,3 +89,4 @@
         width: 100%;
     }
 }
+>>>>>>> master
