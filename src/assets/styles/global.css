@@ -1,17 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
-    margin: 3rem 5rem;
-    padding: 0;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+  /* margin: 3rem 5rem; */
+  /* text-align: center; */
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.btn {
-    @apply py-2 px-6 font-semibold text-lg rounded-full
-}
+@layer base {
+    body {
+      @apply text-xl text-black;
+    }
+  
+    h1 {
+      @apply text-5xl font-bold leading-normal text-black;
+    }
 
-section {
-    @apply mt-40
+    section {
+        @apply mt-40
+    }
 }
 
 .card{
@@ -56,4 +66,3 @@ section {
     .card-services > div{
         width: 100%;
     }
-}

@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import clsx from "clsx";
 
-const Button = (props: { title: string}) => {
-  return (
-    <div className='btn text-white bg-primary'>{props.title}</div>
-  )
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "primary" | "secondary";
+  children: ReactNode;
 }
 
-const ButtonBorder = () => {
-    return (
-        <div className='btn text-primary border border-primary'>Book a tour</div>
-    )
-  }
+const Button: FC<ButtonProps> = ({ variant = "primary", children }) => {
+  const buttonClass = clsx(
+    "py-5 px-10 rounded-full font-bold",
+    variant === "primary" && "bg-primary text-white",
+    variant === "secondary" && "bg-transparent border border-primary text-primary"
+  );
 
-export {Button, ButtonBorder}
+  return <button className={buttonClass}>{children}</button>;
+};
+
+export default Button;
