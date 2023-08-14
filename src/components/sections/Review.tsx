@@ -11,29 +11,29 @@ import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 interface CustomArrowProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  variant?: "previous" | "next";
 }
 
-const buttonNavClass = clsx(
-  "w-14 h-14 rounded-full border-2 border-primary",
-  "flex justify-center items-center",
-  "bg-transparent text-primary transition duration-300",
-  "hover:bg-primary hover:text-white"
-);
-
-const arrowClass = "h-8 w-8";
-
-const ButtonPrev: FC<CustomArrowProps> = ({ onClick }) => {
-  return (
-    <button className={buttonNavClass} onClick={onClick}>
-      <ArrowLeftIcon className={arrowClass} />
-    </button>
+const ButtonNavigation: FC<CustomArrowProps> = ({
+  onClick,
+  variant = "previous",
+}) => {
+  const buttonNavClass = clsx(
+    "w-14 h-14 rounded-full border-2 border-primary",
+    "flex justify-center items-center",
+    "bg-transparent text-primary transition duration-300",
+    "hover:bg-primary hover:text-white"
   );
-};
 
-const ButtonNext: FC<CustomArrowProps> = ({ onClick }) => {
+  const arrowClass = "h-8 w-8";
+
   return (
     <button className={buttonNavClass} onClick={onClick}>
-      <ArrowRightIcon className={arrowClass} />
+      {variant === "previous" ? (
+        <ArrowLeftIcon className={arrowClass} />
+      ) : (
+        <ArrowRightIcon className={arrowClass} />
+      )}
     </button>
   );
 };
@@ -93,8 +93,8 @@ const Review: FC = () => {
           </div>
 
           <div className="hidden lg:flex items-center gap-x-5">
-            <ButtonPrev onClick={handlePrev} />
-            <ButtonNext onClick={handleNext} />
+            <ButtonNavigation variant="previous" onClick={handlePrev} />
+            <ButtonNavigation variant="next" onClick={handleNext} />
           </div>
         </div>
       </Container>
