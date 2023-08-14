@@ -1,17 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        // 'primary': '#0192FE'
         primary: '#0192FE',
         label: '#0292FF',
         primaryText: '#000',
-        secondaryText: '#2E3135'
+        secondaryText: '#2E3135',
+        secondary: '#2E3135'
       },
     },
   },
