@@ -12,6 +12,7 @@ const HomePage = () => {
       <Hero />
       <Location />
       <Review />
+      {/* <Cta /> */}
     </>
   );
 };
