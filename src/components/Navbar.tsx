@@ -54,7 +54,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           ))}
-          <Button variant="primary">Sign Up</Button>
+          <Button variant="primary" size="small">Sign Up</Button>
         </ul>
       </div>
     </div>

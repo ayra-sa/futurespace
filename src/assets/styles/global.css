@@ -3,90 +3,83 @@
 @tailwind utilities;
 
 #root {
-    /* margin: 3rem 5rem; */
-    /* text-align: center; */
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    font-family: "Plus Jakarta Sans", sans-serif;
+  /* margin: 3rem 5rem; */
+  /* text-align: center; */
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 @layer base {
-    body {
-        @apply text-xl text-black;
-    }
+  body {
+    @apply text-xl text-black;
+  }
 
-    h1 {
-        @apply text-5xl font-bold leading-normal text-black;
-    }
+  h1 {
+    @apply text-5xl font-bold leading-normal text-black;
+  }
 
-    section {
-        @apply mt-40
-    }
+  section {
+    @apply mt-40;
+  }
 
-    h2 {
-        @apply font-bold text-secondary text-2xl pt-4
-    }
+  h2 {
+    @apply font-bold text-secondary text-2xl pt-4;
+  }
 
-    p {
-        @apply font-normal text-xl opacity-70 mt-6
-    }
-}
-
-<<<<<<< HEAD
-@layer components {
-  .slick-slide {
-    @apply mr-10
+  p {
+    @apply font-normal text-xl opacity-70 mt-6;
   }
 }
 
-/* .btn{
-    @apply
-    py-5 px-10  font-semibold text-lg rounded-full
-} */
-=======
-.card {
-    @apply mt-12 flex gap-12
+@layer components {
+  .slick-slide {
+    @apply mr-10;
+  }
 }
 
-.card-services>div {
-    width: 30%;
+.card {
+  @apply mt-12 flex gap-12;
+}
+
+.card-services > div {
+  width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    #root {
-        margin: 3rem;
-    }
+  #root {
+    margin: 3rem;
+  }
 
-    .box {
-        flex-direction: column !important;
-    }
+  .box {
+    flex-direction: column !important;
+  }
 
-    .box img {
-        @apply mt-7
-    }
+  .box img {
+    @apply mt-7;
+  }
 
-    .btn {
-        @apply text-sm
-    }
+  .btn {
+    @apply text-sm;
+  }
 
-    .mt-16 {
-        margin-top: 2rem !important;
-    }
+  .mt-16 {
+    margin-top: 2rem !important;
+  }
 
-    section {
-        margin-top: 6rem !important;
-    }
+  section {
+    margin-top: 6rem !important;
+  }
 
-    h1 {
-        font-size: 2rem !important;
-    }
+  h1 {
+    font-size: 2rem !important;
+  }
 
-    .card-services>div {
-        width: 100%;
-    }
+  .card-services > div {
+    width: 100%;
+  }
 }
->>>>>>> master

@@ -8,7 +8,7 @@ const Hero = () => {
     <section>
       <Container>
         <div className="flex justify-between items-center gap-x-8 box">
-          <div className="text-left text-black max-w-[420px]">
+          <div className="text-left text-black max-w-[40%]">
             <h1>The workspace that works for you & your team</h1>
             <p>
               A safe, comfortable, and hassle-free Coworking workspace increases
