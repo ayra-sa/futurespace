@@ -15,7 +15,7 @@ const Cta: FC = () => {
   return (
     <Section>
       <Container>
-        <div className="flex bg-[#F0F6FF] p-12 gap-9 rounded-2xl">
+        <div className="flex flex-col lg:flex-row bg-[#F0F6FF] p-12 gap-9 rounded-2xl">
           <div>
             <h1 className="mb-9">Customised workspace for rent wherever you need it</h1>
             <Button variant="primary">Book Tour</Button>
