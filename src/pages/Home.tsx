@@ -5,17 +5,24 @@ import Navbar from "../components/Navbar";
 import Features from "../components/sections/Features";
 import Plans from "../components/sections/Plans";
 import Services from "../components/sections/Services";
+import Cta from "../components/sections/Cta";
+import Subscribe from "../components/sections/Subscribe";
+import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
 const HomePage = () => {
   return (
-    <main>
+    <Layout>
       <Navbar/>
       <Hero />
       <Services/>
       <Features/>
       <Plans/>
       <Location />
-    </main>
+      <Cta />
+      <Subscribe />
+      <Footer />
+    </Layout>
   );
 };
 
