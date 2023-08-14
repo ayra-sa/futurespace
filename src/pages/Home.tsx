@@ -6,10 +6,7 @@ import Features from "../components/sections/Features";
 import Plans from "../components/sections/Plans";
 import Services from "../components/sections/Services";
 import Cta from "../components/sections/Cta";
-<<<<<<< HEAD
 import Subscribe from "../components/sections/Subscribe";
-=======
->>>>>>> master
 
 const HomePage = () => {
   return (
