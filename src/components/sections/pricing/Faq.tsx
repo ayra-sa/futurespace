@@ -15,7 +15,7 @@ const Faq = () => {
   return (
     <Section>
       <Container>
-        <div className="hidden lg:block text-center space-y-6 w-4/5 mx-auto">
+        <div className="lg:block text-center space-y-6 w-4/5 mx-auto">
           <h1>Frequently asked questions about coworking</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit cursus
@@ -25,10 +25,10 @@ const Faq = () => {
         </div>
         <div className="flex flex-col gap-8 pt-14">
           {dataFaq.faqs.map((faq, id) => (
-            <div key={id} className="shadow-md p-8 rounded-xl w-3/4 mx-auto cursor-pointer">
+            <div key={id} className="shadow-md p-8 rounded-xl mx-auto cursor-pointer w-full lg:w-3/4">
               <div className="flex items-center justify-between" onClick={() => toggle(id)}>
                 <h2>{faq.question}</h2>
-                <div>{selected=== id ? 
+                <div className="h-5 w-5">{selected=== id ? 
                 (
                     <img src="icons/ic-min.svg" alt="" />
                 ): (<img src="icons/ic-plus.svg" alt="" />)

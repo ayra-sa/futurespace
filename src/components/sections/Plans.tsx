@@ -1,15 +1,14 @@
 import React from "react";
 import { CardService } from "../Card";
 import Container from "../Container";
+import Label from "../Label";
 
 const Plans = () => {
   return (
     <section className="text-center">
       <Container>
         <div>
-          <p className="text-primary font-bold uppercase">
-            Why Serviced Office
-          </p>
+          <Label text="Why Serviced Office"/>
           <h1 className="py-6">
             We've helped thousands of <br />
             fast-growing startups and teams

@@ -1,13 +1,14 @@
 import React from "react";
 import { CardService } from "../Card";
 import Container from "../Container";
+import Label from "../Label";
 
 const Services = () => {
   return (
     <section>
       <Container>
         <div className="text-left">
-          <p className="uppercase text-primary font-bold">Our Services</p>
+          <Label text="Our Services"/>
           <h1 className="max-w-6xl">
             Flexible Solutions for Your Business - Choose What Works Best for
             You

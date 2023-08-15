@@ -16,7 +16,7 @@ const Leadership = () => {
             semper viverra aliquet sit.
           </p>
         </div>
-        <div className="card box flex gap-9 justify-between">
+        <div className="card box flex gap-9 justify-between items-center">
           {dataTeam.teams.map((team, id) => (
             <div key={id}>
               <img src={team.image} alt="" />
