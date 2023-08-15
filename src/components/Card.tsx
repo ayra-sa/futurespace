@@ -13,6 +13,12 @@ interface Features{
   className?: string
 }
 
+interface DataSection{
+  number: string,
+  title: string,
+  desc: string
+}
+
 const CardService = (props: Service) => {
   const cardClasses = `px-12 py-10 text-left shadow rounded-3xl ${
     props.showBorder ? 'border border-primary' : ''
@@ -41,4 +47,14 @@ const CardFeatures = (props: Features) => {
   )
 }
 
-export { CardService, CardFeatures };
+const CardData = (props: DataSection) => {
+  return(
+    <div>
+      <h1 className="text-primary text-5xl pb-3">{props.number}</h1>
+      <h2>{props.title}</h2>
+      <p>{props.desc}</p>
+    </div>
+  )
+}
+
+export { CardService, CardFeatures, CardData };
