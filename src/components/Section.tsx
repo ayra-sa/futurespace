@@ -5,7 +5,7 @@ interface SectionProps {
 }
 
 const Section: FC<SectionProps> = ({ children }) => {
-  return <section className="py-14">{children}</section>;
+  return <section className="py-14 mt-0">{children}</section>;
 };
 
 export default Section;

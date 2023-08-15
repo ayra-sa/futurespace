@@ -8,7 +8,8 @@ export default {
         label: '#0292FF',
         primaryText: '#000',
         secondaryText: '#2E3135',
-        secondary: '#2E3135'
+        secondary: '#2E3135',
+        cta: '#F0F6FF'
       },
     },
   },

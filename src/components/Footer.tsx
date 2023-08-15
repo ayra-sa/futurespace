@@ -28,7 +28,7 @@ const SocialMediaGroup: FC<SocialMediaGroupProps> = ({ mode = "mobile" }) => {
 
 const Footer: FC = () => {
   return (
-    <footer className="pb-16 lg:py-16">
+    <footer className="pb-16 lg:pt-16 lg:pb-5">
       <Container>
         <div className="mb-9 flex flex-col items-center lg:flex-row border-b lg:border-b-0 lg:border-t pb-16 lg:pb-0 border-opacity-30 border-b-black">
           <div className="flex-1">
