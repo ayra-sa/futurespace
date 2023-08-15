@@ -7,6 +7,7 @@ import Services from "../components/sections/Services";
 import Cta from "../components/sections/Cta";
 import Subscribe from "../components/sections/Subscribe";
 import Layout from "../components/Layout";
+import Review from "../components/sections/Review";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Features/>
       <Plans/>
       <Location />
+      <Review/>
       <Cta />
       <Subscribe />
     </Layout>
