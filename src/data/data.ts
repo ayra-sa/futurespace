@@ -175,3 +175,35 @@ export const footerData = {
   ],
   copyright: "© 2023 All rights reserved - Futurspace",
 };
+
+export const dataTeam = {
+  label: "reviews",
+  title: "What Our Members Say",
+  teams: [
+    {
+      image: 'images/team.png',
+      name: 'John Carter',
+      job: 'CEO & Founder'
+    },
+    {
+      image: 'images/team-2.png',
+      name: 'Sophie Moore',
+      job: 'CTO & Founder'
+    },
+    {
+      image: 'images/team-3.png',
+      name: 'Matt Cannon',
+      job: 'VP of Finance'
+    },
+    {
+      image: 'images/team-4.png',
+      name: 'Andy Smith',
+      job: 'VP of Design'
+    },
+    {
+      image: 'images/team-5.png',
+      name: 'Sam Houston',
+      job: 'VP of Product'
+    }
+  ]
+}
