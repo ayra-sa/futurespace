@@ -5,6 +5,7 @@ import Map from '../components/sections/contact-us/Map'
 import ContactSection from '../components/sections/contact-us/ContactSection'
 import CtaContact from '../components/sections/contact-us/CtaContact'
 import Client from '../components/Client'
+import Form from '../components/sections/contact-us/Form'
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
       <ContactSection />
       <CtaContact />
       <Client />
+      <Form />
     </Layout>
   )
 }

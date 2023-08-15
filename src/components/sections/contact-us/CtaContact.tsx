@@ -30,7 +30,7 @@ const CtaContact: FC = () => {
               to allow you to focus on your business instead of logistics.
             </p>
 
-            <div className="flex flex-wrap gap-5 items-center">
+            <div className="flex flex-fol lg:flex-row gap-5 items-center">
                 <Button variant="primary">Discover now</Button>
                 <Button variant="secondary">Book Tour</Button>
             </div>

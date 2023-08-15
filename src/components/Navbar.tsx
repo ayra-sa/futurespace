@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed top-0 left-0 z-20">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7 whitespace-nowrap">
         <div>
         <img src='icons/logo.svg' alt="Logo" className="w-auto" />
         </div>

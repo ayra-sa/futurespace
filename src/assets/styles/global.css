@@ -36,6 +36,10 @@
   .slick-slide {
     @apply mr-10;
   }
+
+  .input-field {
+    @apply px-12 py-7 rounded-full border border-secondary border-opacity-30 shadow-sm w-full text-base;
+  }
 }
 
 .card {
@@ -46,9 +50,8 @@
   width: 30%;
 }
 
-.actived{
-  @apply
-  font-bold 
+.actived {
+  @apply font-bold;
 }
 
 @media only screen and (max-width: 768px) {
@@ -84,7 +87,7 @@
     font-size: 2rem !important;
   }
 
-  h2{
+  h2 {
     font-size: 15px;
   }
 
@@ -92,11 +95,11 @@
     width: 100%;
   }
 
-  .content-hero{
+  .content-hero {
     max-width: 100% !important;
   }
 
-  .box{
+  .box {
     flex-direction: column;
   }
 }
