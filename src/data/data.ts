@@ -177,8 +177,6 @@ export const footerData = {
 };
 
 export const dataTeam = {
-  label: "reviews",
-  title: "What Our Members Say",
   teams: [
     {
       image: 'images/team.png',
@@ -204,6 +202,27 @@ export const dataTeam = {
       image: 'images/team-5.png',
       name: 'Sam Houston',
       job: 'VP of Product'
+    }
+  ]
+};
+
+export const dataFaq = {
+  faqs: [
+    {
+      question: 'What are the benefits of joining the Futurspace network?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+    },
+    {
+      question: 'What should I expect from the screening process?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+    },
+    {
+      question: 'Is Telephone service available?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+    },
+    {
+      question: 'Is the money refundable if I am unable to register?',
+      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
     }
   ]
 }
