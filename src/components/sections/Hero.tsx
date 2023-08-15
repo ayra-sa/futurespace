@@ -8,14 +8,14 @@ const Hero = () => {
     <section>
       <Container>
         <div className="flex justify-between items-center gap-x-8 box">
-          <div className="text-left text-black max-w-[40%]">
+          <div className="text-left text-black max-w-[40%] content-hero">
             <h1>The workspace that works for you & your team</h1>
             <p>
               A safe, comfortable, and hassle-free Coworking workspace increases
               productivity. Ideal workspaces make life easier and more
               productive.
             </p>
-            <div className="flex gap-x-5 mt-12">
+            <div className="flex gap-5 mt-12 box">
               <Button variant="primary">Discover now</Button>
               <Button variant="secondary">Book a tour</Button>
             </div>

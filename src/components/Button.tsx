@@ -14,7 +14,7 @@ const Button: FC<ButtonProps> = ({
   ...rest
 }) => {
   const buttonClass = clsx(
-    "py-5 px-10 rounded-full font-bold",
+    "py-5 px-8 rounded-full font-bold",
     size === "small" && "!py-3 !px-10 text-base",
     variant === "primary" && "bg-primary text-white",
     variant === "secondary" &&

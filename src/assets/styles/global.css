@@ -82,4 +82,12 @@
   .card-services > div {
     width: 100%;
   }
+
+  .content-hero{
+    max-width: 100% !important;
+  }
+
+  .box{
+    flex-direction: column;
+  }
 }
