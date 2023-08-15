@@ -1,8 +1,5 @@
 import React from "react";
 import { CardService } from "../Card";
-import icon from "../../assets/images/plans.svg";
-import icon2 from "../../assets/images/plans-2.svg";
-import icon3 from "../../assets/images/plans-3.svg";
 import Container from "../Container";
 
 const Plans = () => {
@@ -25,17 +22,17 @@ const Plans = () => {
         </div>
         <div className="card box">
           <CardService
-            icon='public/icons/services.svg'
+            icon='icons/services.svg'
             title="Office Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />
           <CardService
-            icon='public/icons/services-2.svg'
+            icon='icons/services-2.svg'
             title="Coworking Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />
           <CardService
-            icon='public/icons/services-3.svg'
+            icon='icons/services-3.svg'
             title="Meeting Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />

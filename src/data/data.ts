@@ -60,97 +60,118 @@ export const reviewData = {
   ],
 };
 
-export const footerData = [
-  {
-    logo: "/logo",
-    about:
-      "We want to build more than nice, shared office spaces. We want to build a community.",
-    socials: [
-      {
-        social: "Facebook",
-        icon: "/icon",
-        link: "#",
-      },
-      {
-        social: "Linkedin",
-        icon: "/icon",
-        link: "#",
-      },
-      {
-        social: "Instagram",
-        icon: "/icon",
-        link: "#",
-      },
-      {
-        social: "Twitter",
-        icon: "/icon",
-        link: "#",
-      },
-    ],
-    menus: [
-      {
-        label: "About",
-        menu: [
-          {
-            name: "About Us",
-            link: "#",
-          },
-          {
-            name: "Pricing",
-            link: "#",
-          },
-          {
-            name: "Offices",
-            link: "#",
-          },
-          {
-            name: "Spaces",
-            link: "#",
-          },
-        ],
-      },
-      {
-        label: "Product",
-        menu: [
-          {
-            name: "Office Space",
-            link: "#",
-          },
-          {
-            name: "Business Lounge",
-            link: "#",
-          },
-          {
-            name: "Meeting Room",
-            link: "#",
-          },
-          {
-            name: "Virtual Office",
-            link: "#",
-          },
-        ],
-      },
-      {
-        label: "Contact",
-        menu: [
-          {
-            name: "Help Desk",
-            link: "#",
-          },
-          {
-            name: "Book a Tour",
-            link: "#",
-          },
-          {
-            name: "Blog",
-            link: "#",
-          },
-          {
-            name: "Forum",
-            link: "#",
-          },
-        ],
-      },
-    ],
-  },
-];
+export const footerData = {
+  logo: "images/logo.png",
+  about:
+    "We want to build more than nice, shared office spaces. We want to build a community.",
+  socials: [
+    {
+      social: "Facebook",
+      icon: "icons/icon-facebook.svg",
+      link: "#",
+    },
+    {
+      social: "Linkedin",
+      icon: "icons/icon-linkedin.svg",
+      link: "#",
+    },
+    {
+      social: "Instagram",
+      icon: "icons/icon-instagram.svg",
+      link: "#",
+    },
+    {
+      social: "Twitter",
+      icon: "icons/icon-twitter.svg",
+      link: "#",
+    },
+  ],
+  menus: [
+    {
+      label: "About",
+      menu: [
+        {
+          name: "About Us",
+          link: "#",
+        },
+        {
+          name: "Pricing",
+          link: "#",
+        },
+        {
+          name: "Offices",
+          link: "#",
+        },
+        {
+          name: "Spaces",
+          link: "#",
+        },
+      ],
+    },
+    {
+      label: "Product",
+      menu: [
+        {
+          name: "Office Space",
+          link: "#",
+        },
+        {
+          name: "Business Lounge",
+          link: "#",
+        },
+        {
+          name: "Meeting Room",
+          link: "#",
+        },
+        {
+          name: "Virtual Office",
+          link: "#",
+        },
+      ],
+    },
+    {
+      label: "Contact",
+      menu: [
+        {
+          name: "Help Desk",
+          link: "#",
+        },
+        {
+          name: "Book a Tour",
+          link: "#",
+        },
+        {
+          name: "Blog",
+          link: "#",
+        },
+        {
+          name: "Forum",
+          link: "#",
+        },
+      ],
+    },
+  ],
+  menuMobile: [
+    {
+      menu: "About Us",
+      link: "/about",
+    },
+    {
+      menu: "Pricing",
+      link: "/pricing",
+    },
+    {
+      menu: "Offices",
+      link: "/offices",
+    },
+    {
+      menu: "Spaces",
+      link: "/spaces",
+    },
+    {
+      menu: "Contact",
+      link: "/contact",
+    },
+  ],
+  copyright: "© 2023 All rights reserved - Futurspace",
+};
