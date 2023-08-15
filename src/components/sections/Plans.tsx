@@ -22,17 +22,17 @@ const Plans = () => {
         </div>
         <div className="card box">
           <CardService
-            icon='icons/services.svg'
+            icon='images/plans.svg'
             title="Office Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />
           <CardService
-            icon='icons/services-2.svg'
+            icon='images/plans-2.svg'
             title="Coworking Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />
           <CardService
-            icon='icons/services-3.svg'
+            icon='images/plans-3.svg'
             title="Meeting Space"
             desc="Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
           />
