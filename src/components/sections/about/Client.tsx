@@ -1,17 +1,20 @@
-import React from 'react'
-import Container from '../../Container'
+import React from "react";
+import Container from "../../Container";
+import Section from "../../Section";
 
 const Client = () => {
   return (
-    <section>
-        <Container>
-        <div className='text-center'>
-        <h2 className='opacity-50 py-5'>Trusted by top companies and startups around the world</h2>
-                <img src="images/client-image.svg" alt="Image Client" />
+    <Section>
+      <Container>
+        <div className="text-center">
+          <h2 className="opacity-50 py-5">
+            Trusted by top companies and startups around the world
+          </h2>
+          <img src="images/client-image.svg" alt="Image Client" />
         </div>
-        </Container>
-    </section>
-  )
-}
+      </Container>
+    </Section>
+  );
+};
 
-export default Client
+export default Client;

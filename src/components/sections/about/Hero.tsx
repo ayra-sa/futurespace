@@ -3,7 +3,7 @@ import Container from "../../Container";
 
 const Hero = () => {
   return (
-    <section className="bg-primary py-8">
+    <div className="bg-primary pt-32 pb-24">
       <Container>
         <div className="flex justify-between items-center gap-x-8 box">
           <div className="max-w-[20%] content-hero">
@@ -23,7 +23,7 @@ const Hero = () => {
           <img src="images/hero-about.svg" alt="Illustration Hero" />
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 

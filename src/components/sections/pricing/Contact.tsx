@@ -13,7 +13,7 @@ const Contact: FC = () => {
   );
 
   return (
-    <section>
+    <Section>
       <Container>
         <div className="flex flex-col lg:flex-row bg-[#F0F6FF] p-12 gap-9 rounded-2xl">
           <div>
@@ -29,7 +29,7 @@ const Contact: FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 
