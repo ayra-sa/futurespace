@@ -4,24 +4,24 @@ import clsx from "clsx";
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary";
   size?: "normal" | "small";
-  width?: "full";
+  width?: "normal" | "full";
   children: ReactNode;
 }
 
 const Button: FC<ButtonProps> = ({
   variant = "primary",
   size = "normal",
-  width = "full",
+  width = "normal",
   children,
   ...rest
 }) => {
   const buttonClass = clsx(
-    "py-5 px-8 rounded-full font-bold",
+    "py-5 px-8 rounded-full font-bold transition duration-300",
     size === "small" && "!py-3 !px-10 text-base",
     width === "full" && "w-full",
-    variant === "primary" && "bg-primary text-white",
+    variant === "primary" && "bg-primary text-white hover:bg-[#0067B4]",
     variant === "secondary" &&
-      "bg-transparent border border-primary text-primary"
+      "bg-transparent border border-primary text-primary hover:bg-primary hover:text-white"
   );
 
   return (

@@ -11,7 +11,7 @@ const Navbar = () => {
   const Links: LinkItem[] = [
     { name: "About", link: "/about" },
     { name: "Pricing", link: "/pricing" },
-    { name: "Offices", link: "/" },
+    { name: "Offices", link: "/offices" },
     { name: "Spaces", link: "/spaces" },
     { name: "Contact us", link: "/contact" },
   ];
@@ -43,12 +43,13 @@ const Navbar = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7 nav-menu">
             <NavLink
               to={link.link}
-              activeClassName="actived"
-              className="text-black text-base hover:text-gray-400 duration-500"
+              // activeClassName="actived"
+              className="text-black text-base font-normal hover:text-primary transition-all duration-500"
               onClick={handleToggle}
+              reloadDocument
             >
               {link.name}
             </NavLink>

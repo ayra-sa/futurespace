@@ -11,7 +11,9 @@ const Client: FC = () => {
             Trusted by top companies and startups around the world
           </p>
 
-          <img src="images/client-logo.png" alt="client logo" />
+          <div className="lg:w-4/5 lg:mx-auto">
+            <img src="images/client-logo.png" alt="client logo" />
+          </div>
         </div>
       </Container>
     </Section>

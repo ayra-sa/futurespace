@@ -33,7 +33,7 @@ const Footer: FC = () => {
         <div className="mb-9 flex flex-col items-center lg:flex-row border-b lg:border-b-0 lg:border-t pb-16 lg:pb-0 border-opacity-30 border-b-black">
           <div className="flex-1">
             <div className="w-1/2 mx-auto lg:mx-0">
-              <a href="#">
+              <a href="/">
                 <img src={footerData.logo} alt="logo" />
               </a>
               <p className="text-base hidden lg:block mt-4 mb-9">
@@ -51,7 +51,7 @@ const Footer: FC = () => {
                   <b>{menu.label}</b>
                   <ul className="space-y-4 mt-6">
                     {menu.menu.map((m, id) => (
-                      <li key={id}>
+                      <li key={id} className="opacity-50 transition-colors duration-300 hover:opacity-100">
                         <a href={m.link}>{m.name}</a>
                       </li>
                     ))}
@@ -61,7 +61,7 @@ const Footer: FC = () => {
             </div>
             <ul className="space-y-9 lg:hidden">
               {footerData.menuMobile.map((menu) => (
-                <li key={menu.menu}>
+                <li key={menu.menu} className="opacity-50 transition-colors duration-300 hover:opacity-100">
                   <a href={menu.link}>{menu.menu}</a>
                 </li>
               ))}

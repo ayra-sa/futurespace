@@ -40,6 +40,10 @@
   .input-field {
     @apply px-12 py-7 rounded-full border border-secondary border-opacity-30 shadow-sm w-full text-base;
   }
+
+  .nav-menu a.active {
+    @apply text-primary
+  }
 }
 
 .card {

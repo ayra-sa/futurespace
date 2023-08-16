@@ -246,3 +246,23 @@ export const contactData = {
   customer: 'Our friendly team is here to help.',
   customerName: 'Customer Service'
 };
+
+
+// Spaces Data
+export const serviceSpacesData = [
+  {
+    image: 'images/hot-desks.png',
+    title: 'Hot Desks',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+  {
+    image: 'images/starter-spaces.png',
+    title: 'Starter Spaces',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+  {
+    image: 'images/coworking-spaces.png',
+    title: 'Coworking Spaces',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+]
