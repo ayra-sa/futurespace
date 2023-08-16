@@ -42,32 +42,31 @@
   @apply mt-12 flex gap-12;
 }
 
-.card-services > div {
+.card-services>div {
   width: 30%;
 }
 
-.actived{
-  @apply
-  font-bold 
+.actived {
+  @apply font-bold
 }
 
-.btn-switch{
-  @apply py-5 px-8 text-black font-normal text-xl 
+.btn-switch {
+  @apply py-5 px-8 text-black font-normal text-xl
 }
 
-.switch-active{
+.switch-active {
   @apply text-primary bg-white rounded-full font-bold
 }
 
-.price{
+.price {
   @apply rounded-xl py-10 px-12 shadow-lg
 }
 
-.price h2{
+.price h2 {
   @apply font-normal py-5
 }
 
-.price p{
+.price p {
   @apply text-base pb-5
 }
 
@@ -75,7 +74,7 @@
   @apply py-5
 }
 
-.price ul li{
+.price ul li {
   @apply flex gap-2 items-center py-2
 }
 
@@ -83,17 +82,13 @@
   @apply py-2 text-lg
 }
 
-.price button{
+.price button {
   width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-  }
-
-  #root {
-    margin: 3rem;
   }
 
   .box {
@@ -120,31 +115,35 @@
     font-size: 2rem !important;
   }
 
-  h2{
+  h2 {
     font-size: 15px;
   }
 
-  .card-services > div {
+  .card-services>div {
     width: 100%;
   }
 
-  .content-hero{
+  .content-hero {
     max-width: 100% !important;
   }
 
-  .box{
+  .box {
     flex-direction: column;
   }
-  .price{
+
+  .price {
     @apply p-7
   }
-  .price img{
+
+  .price img {
     margin-top: 0px;
   }
-  .price ul li p{
+
+  .price ul li p {
     @apply text-sm p-0
   }
-  .btn-switch{
+
+  .btn-switch {
     @apply p-3 text-base
   }
 }

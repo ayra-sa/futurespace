@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({
     size === "small" && "!py-3 !px-10 text-base",
     variant === "primary" && "bg-primary text-white",
     variant === "secondary" &&
-      "bg-transparent border border-primary text-primary"
+      "bg-white border border-primary text-primary"
   );
 
   return (
