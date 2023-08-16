@@ -244,7 +244,7 @@ export const contactData = {
   call: '(252) 555-0126',
   callName: "Call Us Now",
   customer: 'Our friendly team is here to help.',
-  customerName: 'Customer Service'
+  customerName: "Customer Service"
 };
 
 
