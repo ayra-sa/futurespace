@@ -11,7 +11,7 @@ const Navbar = () => {
   const Links: LinkItem[] = [
     { name: "About", link: "/about" },
     { name: "Pricing", link: "/pricing" },
-    { name: "Offices", link: "/" },
+    { name: "Offices", link: "#" },
     { name: "Spaces", link: "/spaces" },
     { name: "Contact us", link: "/contact" },
   ];
@@ -46,8 +46,7 @@ const Navbar = () => {
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <NavLink
                 to={link.link}
-                activeClassName="actived"
-                className={`text-base hover:text-gray-400 duration-500 ${isAboutPage ? 'text-white' : 'text-black'}`}
+                className={`text-base hover:text-gray-400 duration-500 ${location.pathname === link.link ? 'font-bold' : ''} ${isAboutPage ? 'text-white' : 'text-black'}`}
                 onClick={handleToggle}
               >
                 {link.name}
