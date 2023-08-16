@@ -28,7 +28,7 @@
   }
 
   p {
-    @apply font-normal text-xl opacity-70 mt-6;
+    @apply font-normal text-xl opacity-70 pt-5;
   }
 }
 
@@ -56,6 +56,42 @@
 
 .actived {
   @apply font-bold;
+}
+
+.btn-switch{
+  @apply py-5 px-8 text-black font-normal text-xl 
+}
+
+.switch-active{
+  @apply text-primary bg-white rounded-full font-bold
+}
+
+.price{
+  @apply rounded-xl py-10 px-12 shadow-lg
+}
+
+.price h2{
+  @apply font-normal py-5
+}
+
+.price p{
+  @apply text-base pb-5
+}
+
+.price ul {
+  @apply py-5
+}
+
+.price ul li{
+  @apply flex gap-2 items-center py-2
+}
+
+.price ul li p {
+  @apply py-2 text-lg
+}
+
+.price button{
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -105,5 +141,17 @@
 
   .box {
     flex-direction: column;
+  }
+  .price{
+    @apply p-7
+  }
+  .price img{
+    margin-top: 0px;
+  }
+  .price ul li p{
+    @apply text-sm p-0
+  }
+  .btn-switch{
+    @apply p-3 text-base
   }
 }

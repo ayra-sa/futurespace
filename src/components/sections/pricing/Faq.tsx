@@ -30,8 +30,8 @@ const Faq = () => {
                 <h2>{faq.question}</h2>
                 <div className="h-5 w-5">{selected=== id ? 
                 (
-                    <img src="icons/ic-min.svg" alt="" />
-                ): (<img src="icons/ic-plus.svg" alt="" />)
+                    <img src="icons/ic-min.svg" alt="Icons Image" />
+                ): (<img src="icons/ic-plus.svg" alt="Icons Image" />)
             }</div>
               </div>
               <div className={selected=== id ? 'show':'hidden'}>

@@ -107,7 +107,7 @@ const Review: FC = () => {
               className="py-11 mt-16 px-12 rounded-3xl bg-white shadow-2xl slick-slide space-y-6"
             >
               <img src="icons/icon-stars.svg" alt="icon stars" />
-              <p className="text-secondaryText text-base">{review.review}</p>
+              <p className="text-secondary text-base">{review.review}</p>
 
               <div className="flex items-center gap-5">
                 <img src={review.photo} alt={review.name} />
