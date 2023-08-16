@@ -5,7 +5,7 @@ import Button from "../../Button";
 
 const Cta: FC = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div className="flex flex-col lg:flex-row bg-[#F0F6FF] p-12 gap-10 justify-between rounded-2xl">
           <div>
@@ -19,7 +19,7 @@ const Cta: FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

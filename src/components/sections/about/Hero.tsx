@@ -3,7 +3,7 @@ import Container from "../../Container";
 
 const Hero = () => {
   return (
-    <div className="bg-primary py-32">
+    <div className="bg-primary pt-32 pb-24">
       <Container>
         <div className="flex justify-between items-center gap-x-8 box">
           <div className="max-w-[20%] content-hero">

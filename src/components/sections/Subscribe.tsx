@@ -17,8 +17,19 @@ const Subscribe: FC = () => {
             Choose from any of our 3000 locations. Get a free quote!
           </p>
 
-          <form action="" className="flex gap-x-9 items-center justify-between border border-[#2E31354D] rounded-full py-3 pr-3 pl-10 w-3/5 mx-auto !mt-16">
-            <input type="email" name="email" id="email" placeholder="Enter your email" className="w-full focus:outline-none" autoComplete="off" />
+          <form
+            action=""
+            className="flex gap-x-9 items-center justify-between border border-[#2E31354D] rounded-full py-3 pr-3 pl-10 w-3/5 mx-auto !mt-16"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              className="w-full focus:outline-none"
+              autoComplete="off"
+              required
+            />
             <Button variant="primary">Submit</Button>
           </form>
           <i className="opacity-40 mt-4 block">No worries, we don’t do spam!</i>

@@ -6,7 +6,7 @@ const HeroPricing = () => {
   return (
     <Section>
       <Container>
-        <div className="text-center">
+        <div className="text-center pt-24">
           <h1>
             Discover flexible spaces and solutions <br /> to your business
           </h1>

@@ -19,10 +19,6 @@
     @apply text-5xl font-bold leading-normal text-black;
   }
 
-  section {
-    @apply mt-40;
-  }
-
   h2 {
     @apply font-bold text-secondary text-2xl pt-4;
   }
@@ -36,6 +32,11 @@
   .slick-slide {
     @apply mr-10;
   }
+
+  .input-field {
+    @apply px-12 py-7 rounded-full border border-secondary border-opacity-30 shadow-sm w-full text-base;
+  }
+
 }
 
 .card {
@@ -47,7 +48,7 @@
 }
 
 .actived {
-  @apply font-bold
+  @apply font-bold;
 }
 
 .btn-switch {
@@ -107,9 +108,9 @@
     margin-top: 2rem !important;
   }
 
-  section {
+  /* section {
     margin-top: 6rem !important;
-  }
+  } */
 
   h1 {
     font-size: 2rem !important;

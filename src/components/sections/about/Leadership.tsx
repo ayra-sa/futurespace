@@ -2,12 +2,13 @@ import React from "react";
 import Container from "../../Container";
 import { dataTeam } from "../../../data/data";
 import Label from "../../Label";
+import Section from "../../Section";
 
 const Leadership = () => {
   return (
-    <section className="text-center">
+    <Section>
       <Container>
-        <div>
+        <div className="text-center">
           <Label text="Our Leadership team" />
           <h1 className="py-6">Meet the great team behind Futurspace</h1>
           <p>
@@ -26,7 +27,7 @@ const Leadership = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

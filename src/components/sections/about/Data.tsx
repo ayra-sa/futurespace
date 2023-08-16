@@ -1,10 +1,11 @@
 import React from "react";
 import { CardData } from "../../Card";
 import Container from "../../Container";
+import Section from "../../Section";
 
 const Data = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div>
           <h1>
@@ -26,7 +27,7 @@ const Data = () => {
             <CardData number="10+" title="Years of service" desc="We offer offices for lease by the day, by the week, or by the year."/>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

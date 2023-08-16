@@ -179,53 +179,93 @@ export const footerData = {
 export const dataTeam = {
   teams: [
     {
-      image: 'images/team.png',
-      name: 'John Carter',
-      job: 'CEO & Founder'
+      image: "images/team.png",
+      name: "John Carter",
+      job: "CEO & Founder",
     },
     {
-      image: 'images/team-2.png',
-      name: 'Sophie Moore',
-      job: 'CTO & Founder'
+      image: "images/team-2.png",
+      name: "Sophie Moore",
+      job: "CTO & Founder",
     },
     {
-      image: 'images/team-3.png',
-      name: 'Matt Cannon',
-      job: 'VP of Finance'
+      image: "images/team-3.png",
+      name: "Matt Cannon",
+      job: "VP of Finance",
     },
     {
-      image: 'images/team-4.png',
-      name: 'Andy Smith',
-      job: 'VP of Design'
+      image: "images/team-4.png",
+      name: "Andy Smith",
+      job: "VP of Design",
     },
     {
-      image: 'images/team-5.png',
-      name: 'Sam Houston',
-      job: 'VP of Product'
-    }
-  ]
+      image: "images/team-5.png",
+      name: "Sam Houston",
+      job: "VP of Product",
+    },
+  ],
 };
 
 export const dataFaq = {
   faqs: [
     {
-      question: 'What are the benefits of joining the Futurspace network?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+      question: "What are the benefits of joining the Futurspace network?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare",
     },
     {
-      question: 'What should I expect from the screening process?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+      question: "What should I expect from the screening process?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare",
     },
     {
-      question: 'Is Telephone service available?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
+      question: "Is Telephone service available?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare",
     },
     {
-      question: 'Is the money refundable if I am unable to register?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
-    }
-  ]
+      question: "Is the money refundable if I am unable to register?",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare",
+    },
+  ],
 };
+
+// Contact Us Data
+export const heroContactData = {
+  label: 'Contact us',
+  title: 'Our space is more than a shared office. It is a meeting ground.',
+  description: 'Find focus and clarity space to do the things you need to do to grow your business in New York. Book by the month, daily or by the hour.'
+}
+
+export const contactData = {
+  location: "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+  locationName: "Global loactions",
+  call: '(252) 555-0126',
+  callName: "Call Us Now",
+  customer: 'Our friendly team is here to help.',
+  customerName: "Customer Service"
+};
+
+
+// Spaces Data
+export const serviceSpacesData = [
+  {
+    image: 'images/hot-desks.png',
+    title: 'Hot Desks',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+  {
+    image: 'images/starter-spaces.png',
+    title: 'Starter Spaces',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+  {
+    image: 'images/coworking-spaces.png',
+    title: 'Coworking Spaces',
+    description: 'Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier.',
+  },
+]
 
 export const dataPricing = {
   price: [

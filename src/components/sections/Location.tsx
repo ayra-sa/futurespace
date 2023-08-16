@@ -20,7 +20,7 @@ const Location: FC = () => {
                 {locationData.locations.map((location, id) => (
                 <div key={id} className="flex gap-10 items-center">
                     <img src="icons/icon-location.svg" alt="icon location" />
-                    <p className="text-[26px] font-bold text-[#2E3135]">
+                    <p className="text-[26px] !mt-0 font-bold text-[#2E3135]">
                     {location.location}
                     </p>
                 </div>
