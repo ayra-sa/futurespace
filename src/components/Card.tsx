@@ -1,32 +1,34 @@
 import React from "react";
+import Button from "./Button";
 
-interface Service{
-    title: string,
-    icon: string,
-    showBorder?: boolean,
-    desc?: string
+interface Service {
+  title: string;
+  icon: string;
+  showBorder?: boolean;
+  desc?: string;
 }
 
-interface Features{
-  title: string,
-  desc?: string,
-  className?: string
+interface Features {
+  title: string;
+  desc?: string;
+  className?: string;
 }
 
-interface DataSection{
-  number: string,
-  title: string,
-  desc: string
+interface DataSection {
+  number: string;
+  title: string;
+  desc: string;
 }
 
 const CardService = (props: Service) => {
   const cardClasses = `px-12 py-10 text-left shadow rounded-3xl ${
-    props.showBorder ? 'border border-primary' : ''
+    props.showBorder ? "border border-primary" : ""
   }`;
-  const description = props.desc || "Ideal for members who need a productive space to work.";
+  const description =
+    props.desc || "Ideal for members who need a productive space to work.";
   return (
     <div className={cardClasses}>
-      <img src={props.icon} alt="" />
+      <img src={props.icon} alt="Icons Image" />
       <h2>{props.title}</h2>
       <p className="my-4">{description}</p>
       <div className="flex gap-2 items-center">
@@ -38,23 +40,25 @@ const CardService = (props: Service) => {
 };
 
 const CardFeatures = (props: Features) => {
-  const cardClasses = `px-11 py-8 rounded-3xl shadow ${props.className || ''}`;
-  return(
+  const cardClasses = `px-11 py-8 rounded-3xl shadow ${props.className || ""}`;
+  return (
     <div className={cardClasses}>
       <h2>{props.title}</h2>
-      {props.desc && <p style={{ display: props.desc ? 'block' : 'none' }}>{props.desc}</p>}
+      {props.desc && (
+        <p style={{ display: props.desc ? "block" : "none" }}>{props.desc}</p>
+      )}
     </div>
-  )
-}
+  );
+};
 
 const CardData = (props: DataSection) => {
-  return(
+  return (
     <div>
       <h1 className="text-primary text-5xl pb-3">{props.number}</h1>
       <h2>{props.title}</h2>
       <p>{props.desc}</p>
     </div>
-  )
-}
+  );
+};
 
 export { CardService, CardFeatures, CardData };

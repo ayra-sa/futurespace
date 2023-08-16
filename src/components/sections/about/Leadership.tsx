@@ -19,7 +19,7 @@ const Leadership = () => {
         <div className="card box flex gap-9 justify-between items-center">
           {dataTeam.teams.map((team, id) => (
             <div key={id}>
-              <img src={team.image} alt="" />
+              <img src={team.image} alt="Image Team" />
               <h2>{team.name}</h2>
               <p className="mt-2">{team.job}</p>
             </div>

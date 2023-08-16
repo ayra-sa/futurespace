@@ -225,4 +225,90 @@ export const dataFaq = {
       answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare'
     }
   ]
+};
+
+export const dataPricing = {
+  price: [
+    {
+      img: 'icons/ic-silver.svg',
+      paket: 'Silver',
+      price: 399,
+      desc: 'Pay one simple price for everything related to your workspace.',
+      fitur: [
+        {
+          title: 'Coworking & Rooms',
+        },
+        {
+          title: 'High-speed Internet',
+        }
+      ],
+      nonFitur: [
+        {
+          title: 'Explusive Workspace',
+        },
+        {
+          title: 'Customisable Room',
+        },
+        {
+          title: 'All-inclusive Pricing',
+        }
+      ]
+    },
+    {
+      img: 'icons/ic-gold.svg',
+      paket: 'Gold',
+      price: 599,
+      desc: 'Pay one simple price for everything related to your workspace.',
+      fitur: [
+        {
+          title: 'Coworking & Rooms',
+        },
+        {
+          title: 'High-speed Internet',
+        },
+        {
+          title: 'Explusive Workspace',
+        },
+        {
+          title: 'Customisable Room',
+        },
+        {
+          title: 'Meeting Rooms',
+        },
+        {
+          title: 'Private Office',
+        }
+
+      ],
+      nonFitur: [
+        {
+          title: 'All-inclusive Pricing'
+        }
+      ]
+    },
+    {
+      img: 'icons/ic-platinum.svg',
+      paket: 'Platinum ',
+      price: 999,
+      desc: 'Pay one simple price for everything related to your workspace.',
+      fitur: [
+        {
+          title: 'Coworking & Rooms',
+        },
+        {
+          title: 'High-speed Internet',
+        },
+        {
+          title: 'Explusive Workspace',
+        },
+        {
+          title: 'Customisable Room',
+        },
+        {
+          title: 'All-inclusive Pricing'
+        }
+      ],
+      nonFitur: []
+    }
+  ]
 }
