@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Button from "./Button";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface LinkItem {
   name: string;
@@ -42,9 +43,10 @@ const Navbar = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 text-white top-6 w-8 h-8 cursor-pointer md:hidden"
         >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          {/* <ion-icon name={open ? "close" : "menu"}></ion-icon> */}
+          {open ? <XMarkIcon /> : <Bars3Icon />}
         </div>
 
         <ul

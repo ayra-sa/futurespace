@@ -1,5 +1,5 @@
+import { ArrowRightCircleIcon } from "@heroicons/react/20/solid";
 import React from "react";
-import Button from "./Button";
 
 interface Service {
   title: string;
@@ -31,9 +31,10 @@ const CardService = (props: Service) => {
       <img src={props.icon} alt="Icons Image" />
       <h2>{props.title}</h2>
       <p className="my-4">{description}</p>
-      <div className="flex gap-2 items-center">
-        <span className="font-semibold text-primary">Learn More</span>
-        <ion-icon name="arrow-forward-circle" color="primary"></ion-icon>
+      <div className="flex gap-2 items-center text-primary">
+        <span className="font-semibold">Learn More</span>
+        <ArrowRightCircleIcon className="h-6 w-6" />
+        {/* <ion-icon name="arrow-forward-circle" color="primary"></ion-icon> */}
       </div>
     </div>
   );
