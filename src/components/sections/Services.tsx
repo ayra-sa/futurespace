@@ -2,10 +2,11 @@ import React from "react";
 import { CardService } from "../Card";
 import Container from "../Container";
 import Label from "../Label";
+import Section from "../Section";
 
 const Services = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div className="text-left">
           <Label text="Our Services"/>
@@ -22,7 +23,7 @@ const Services = () => {
           <CardService icon='icons/services.svg' title="Meeting Room" />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

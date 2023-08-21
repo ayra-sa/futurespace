@@ -4,8 +4,8 @@ import Container from "../../Container";
 import Section from "../../Section";
 
 const Faq = () => {
-    const [selected, setSelected] = useState(null);
-    const toggle = (id) => {
+    const [selected, setSelected] = useState<number | null>(null);
+    const toggle = (id: number) => {
         if (selected == id){
             return setSelected(null)
         }

@@ -6,7 +6,7 @@ const Join: FC = () => {
   return (
     <Section>
       <Container>
-      <div className="flex flex-col lg:flex-row bg-[#F0F6FF] p-12 gap-9 rounded-2xl text-left justify-between">
+        <div className="flex flex-col lg:flex-row bg-[#F0F6FF] p-12 gap-9 rounded-2xl text-left justify-between">
           <div>
             <h1>Join our team</h1>
           </div>
@@ -18,9 +18,9 @@ const Join: FC = () => {
               nisl in proin <br /> sollicitudin ultricies aliquet malesuada
               aliquet.
             </p>
-            <div className="flex gap-2 items-center pt-4">
+            <div className="flex gap-2 items-center mt-2">
               <span className="font-semibold text-primary">Explore jobs </span>
-              <ion-icon name="arrow-forward-outline" color="primary"></ion-icon>
+              <img src="icons/icon-arrow-button.svg" alt="icon" />
             </div>
           </div>
         </div>
@@ -29,4 +29,4 @@ const Join: FC = () => {
   );
 };
 
-export default Join
+export default Join;

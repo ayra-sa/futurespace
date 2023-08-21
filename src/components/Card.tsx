@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 interface Service {
   title: string;
@@ -33,7 +32,7 @@ const CardService = (props: Service) => {
       <p className="my-4">{description}</p>
       <div className="flex gap-2 items-center">
         <span className="font-semibold text-primary">Learn More</span>
-        <ion-icon name="arrow-forward-circle" color="primary"></ion-icon>
+        <img src="icons/icon-arrow-button.svg" alt="icon" />
       </div>
     </div>
   );

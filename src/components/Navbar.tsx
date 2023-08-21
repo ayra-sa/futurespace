@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Button from "./Button";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface LinkItem {
   name: string;
@@ -19,6 +20,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
+
   const handleToggle = () => {
     setOpen(!open);
   };
@@ -41,10 +43,12 @@ const Navbar = () => {
         </div>
 
         <div
-          onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+          onClick={handleToggle}
+          className={`text-3xl absolute right-8 top-6 w-8 h-8 cursor-pointer md:hidden ${
+            isAboutPage ? "text-white" : "text-black"
+          }`}
         >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          {open ? <XMarkIcon /> : <Bars3Icon />}
         </div>
 
         <ul
@@ -60,7 +64,6 @@ const Navbar = () => {
                   location.pathname === link.link ? "font-bold" : ""
                 } ${isAboutPage ? "text-white" : "text-black"}`}
                 onClick={handleToggle}
-                reloadDocument
               >
                 {link.name}
               </NavLink>
