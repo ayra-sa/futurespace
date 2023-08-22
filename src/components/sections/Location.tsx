@@ -3,10 +3,11 @@ import Container from "../Container";
 import Label from "../Label";
 import { locationData } from "../../data/data";
 import Button from "../Button";
+import Section from "../Section";
 
 const Location: FC = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div className="flex flex-col lg:flex-row gap-20 items-center">
           <img src={locationData.image} alt={locationData.title} />
@@ -32,7 +33,7 @@ const Location: FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

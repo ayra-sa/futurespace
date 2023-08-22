@@ -1,10 +1,11 @@
 import React from "react";
 import { CardFeatures } from "../Card";
 import Container from "../Container";
+import Section from "../Section";
 
 const Features = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div className="box flex justify-between items-center gap-x-2 flex-row-reverse">
           <div className="text-left text-black max-w-[600px]">
@@ -26,7 +27,7 @@ const Features = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

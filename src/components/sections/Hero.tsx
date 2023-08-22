@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Section>
       <Container>
-        <div className="pt-24 flex justify-between items-center gap-x-8 box">
+        <div className="flex justify-between items-center gap-x-8 box py-24">
           <div className="text-left text-black max-w-[40%] content-hero">
             <h1>The workspace that works for you & your team</h1>
             <p>

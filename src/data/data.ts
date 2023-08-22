@@ -162,7 +162,7 @@ export const footerData = {
     },
     {
       menu: "Offices",
-      link: "/offices",
+      link: "#",
     },
     {
       menu: "Spaces",

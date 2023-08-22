@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import Container from "../../Container";
 import Section from "../../Section";
-import { ArrowSmallRightIcon } from "@heroicons/react/24/outline";
 
 const Join: FC = () => {
   return (
@@ -19,10 +18,9 @@ const Join: FC = () => {
               nisl in proin <br /> sollicitudin ultricies aliquet malesuada
               aliquet.
             </p>
-            <div className="flex gap-2 items-center text-primary pt-4">
-              <span className="font-semibold ">Explore jobs </span>
-              <ArrowSmallRightIcon className="w-7 h-7" />
-              {/* <ion-icon name="arrow-forward-outline" color="primary"></ion-icon> */}
+            <div className="flex gap-2 items-center mt-2">
+              <span className="font-semibold text-primary">Explore jobs </span>
+              <img src="icons/icon-arrow-button.svg" alt="icon" />
             </div>
           </div>
         </div>

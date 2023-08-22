@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Container from "./Container";
 import { footerData } from "../data/data";
 import clsx from "clsx";
+import { NavLink } from "react-router-dom";
 
 interface SocialMediaGroupProps {
   mode?: "mobile" | "desktop";
@@ -52,7 +53,7 @@ const Footer: FC = () => {
                   <ul className="space-y-4 mt-6">
                     {menu.menu.map((m, id) => (
                       <li key={id} className="opacity-50 transition-colors duration-300 hover:opacity-100">
-                        <a href={m.link}>{m.name}</a>
+                        <NavLink to={m.link}>{m.name}</NavLink>
                       </li>
                     ))}
                   </ul>
@@ -62,7 +63,7 @@ const Footer: FC = () => {
             <ul className="space-y-9 lg:hidden">
               {footerData.menuMobile.map((menu) => (
                 <li key={menu.menu} className="opacity-50 transition-colors duration-300 hover:opacity-100">
-                  <a href={menu.link}>{menu.menu}</a>
+                  <NavLink to={menu.link}>{menu.menu}</NavLink>
                 </li>
               ))}
             </ul>
